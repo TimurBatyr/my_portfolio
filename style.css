@@ -330,7 +330,7 @@ section {
 }
 
 .experience-sub-title {
-  color: #717570;
+  color: black;
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -364,3 +364,47 @@ article .icon {
 }
 
 /* Projects */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: #8f9c8c;
+  background: white;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 60%;
+  height: 60%;
+  /* width: 20rem;
+  height: 14rem; */
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: #8f9c8c;
+}
+
+.project-order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Footer */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}

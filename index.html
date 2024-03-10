@@ -1,200 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-  <nav id="desktop-nav">
-    <div class="logo">Timur Shurubekov
-      <div class="motto">Always ready to learn and develop ...</div>
-    </div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Timur Shurubekov
-      <div class="motto">Always ready to learn and develop ...</div>
-    </div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="openMenu()">
-        <span></span>
-        <span></span>
-        <span></span> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        Timur Shurubekov
+        <div class="motto">Always ready to learn and develop ...</div>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="openMenu()">About</a></li>
-        <li><a href="#experience" onclick="openMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="openMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="openMenu()">Contact</a></li>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
       </div>
-    </div>
-  </nav>
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./images/profile.png" alt="my_photo">
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, world!</p>
-      <h1 class="title">I'm Timur Shurubekov</h1>
-      <p class="section__text__p2">Software Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./images/cv.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        Timur Shurubekov
+        <div class="motto">Always ready to learn and develop ...</div>
       </div>
-      <div class="socials-container">
-        <img src="./images/linkedin.png" alt="my LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/t-shurubekov/')">
-        <img src="./images/github.png" alt="my GitHub profile" class="icon" onclick="window.open('https://github.com/TimurBatyr')">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="openMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="openMenu()">About</a></li>
+          <li><a href="#experience" onclick="openMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="openMenu()">Projects</a></li>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="about">
-    <p class="section__text__p1">Get to Know More</p>
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
+    </nav>
+    <section id="profile">
       <div class="section__pic-container">
-        <img src="./images/about_me.png" alt="about_me_picture" class="about-pic">
+        <img src="./images/profile.png" alt="my_photo" />
       </div>
-      <div class="about-details-container">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, world!</p>
+        <h1 class="title">I'm Timur Shurubekov</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./images/cv.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div class="socials-container">
+          <img
+            src="./images/linkedin.png"
+            alt="my LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/t-shurubekov/')"
+          />
+          <img
+            src="./images/github.png"
+            alt="my GitHub profile"
+            class="icon"
+            onclick="window.open('https://github.com/TimurBatyr')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./images/about_me.png"
+            alt="about_me_picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1.4+ years <br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./images/soft_skills.png"
+                alt="Soft Skills icon"
+                class="icon"
+              />
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>
+                  Able to set goals, focus, organize, prioritize, communicate
+                  and delegate;
+                </li>
+                <li>Emotionally intelligent, open-minded;</li>
+                <li>Team-player;</li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I am Timur. A software developer who frequently writes good
+              software and occasionally writes tests (I am trying to get into
+              writing automated tests more)
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow down"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hard Skills</h1>
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="./images/experience.png" alt="Experience icon" class="icon">
-            <h3>Experience</h3>
-            <p>1.4+ years <br>Backend Development</p>
+            <h2 class="experience-sub-title">Languages/Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RUBY</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PYTHON</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GIT</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Ruby on Rails</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sinatra</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RSpec</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Minitest</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DRF</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Celery</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./images/checkmark.png"
+                  alt="experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                </div>
+              </article>
+            </div>
           </div>
-          <div class="details-container">
-            <img src="./images/soft_skills.png" alt="Soft Skills icon" class="icon">
-            <h3>Soft Skills</h3>
-            <ul>
-              <li>Able to set goals, focus, organize, prioritize, communicate and delegate;</li> 
-              <li>Emotionally intelligent, open-minded;</li>
-              <li>Team-player;</li>
-            </ul>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>Hi, I am Timur. A software developer who frequently writes good software and occasionally writes tests (I am trying to get into writing automated tests more)</p>
         </div>
       </div>
-    </div>
-    <img src="./images/arrow.png" alt="Arrow down" class="icon arrow" onclick="location.href='./#experience'">
-  </section>
-  <section id="experience">
-    <p class="section__text__p1">Explore My</p>
-    <h1 class="title">Hard Skills</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Languages/Tools</h2>
-          <div class="article-container">
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>RUBY</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>PYTHON</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>JAVASCRIPT</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>HTML</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>CSS</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>PostgreSQL</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>GIT</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Ruby on Rails</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Sinatra</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>RSpec</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Minitest</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Django</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>DRF</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Celery</h3>
-              </div>
-            </article>
-            <article>
-              <img src="./images/checkmark.png" alt="experience icon" class="icon">
-              <div>
-                <h3>Postman</h3>
-              </div>
-            </article>
+      <img
+        src="./images/arrow.png"
+        alt="Arrow down"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/projects.png"
+                alt="project image"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Personal Projects
+            </h2>
+            <div class="btn-container project-order">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/my_movies')"
+              >
+                Movie Collection App
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/small_blog_app')"
+              >
+                Small Blog App
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/quiz_guess_it')"
+              >
+                Simple Guessing Game
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/zeon_git')"
+              >
+                Light Version of Git
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/OnlineShop_API')"
+              >
+                OnlineShop App
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/online_cinema')"
+              >
+                OnlineCinema
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./images/pandas.png"
+                alt="projects contr"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">My Contributions</h2>
+            <div class="btn-container project-order">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/zmall_restapi')"
+              >
+                OnlineBazaar
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://bazar.kz/')"
+              >
+                Online Bazaar Today
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/TimurBatyr/Pizza_restaurant')"
+              >
+                Pizza Restaurant
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://assorti.kg/')"
+              >
+                Bukhara Assorti
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <img src="./images/arrow.png" alt="Arrow down" class="icon arrow" onclick="location.href='./#projects'">
-  </section>
-  <section id="projects">
-
-  </section>
-  <script src="script.js"></script>
-</body>
-</html>  
+      <img
+        src="./images/arrow_up.png"
+        alt="Arrow down"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Timur Shurubekov</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
