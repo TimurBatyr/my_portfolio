@@ -1,9 +1,8 @@
 /* STYLING for all Page */
 
+@import url("https://fonts.googleapis.com/css2?family=Kode+Mono:wght@300;400;500;600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@300;400;500;600&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@300..700&display=swap");
 
 * {
   margin: 0;
@@ -24,13 +23,15 @@ p {
 
 /* Transition */
 
-a, .btn {
+a,
+.btn {
   transition: all 300ms ease;
 }
 
 /* NAV desktop */
 
-nav, .nav-links {
+nav,
+.nav-links {
   display: flex;
 }
 
@@ -38,7 +39,12 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 17vh;
-  background: linear-gradient(rgba(8, 107, 199, 1), rgba(233, 59, 68, 0.5), rgba(231, 78, 228, 0.3), rgba(250, 255, 250, 0.1));
+  background: linear-gradient(
+    rgba(8, 107, 199, 1),
+    rgba(233, 59, 68, 0.5),
+    rgba(231, 78, 228, 0.3),
+    rgba(250, 255, 250, 0.1)
+  );
 }
 
 .nav-links {
@@ -57,7 +63,7 @@ a {
 a:hover {
   color: #8f9c8c;
   text-decoration: underline;
-  text-underline-offset: .5rem;
+  text-underline-offset: 0.5rem;
   text-decoration-color: #1f9608;
 }
 
@@ -143,7 +149,7 @@ a:hover {
   opacity: 0;
 }
 
-.hamburger-icon.open  span:last-child {
+.hamburger-icon.open span:last-child {
   transform: rotate(-45deg) translate(10px, -5px);
 }
 
@@ -242,30 +248,15 @@ section {
   border-radius: 1rem;
 }
 
-.btn-color-1, .btn-color-2 {
+.btn-color-1 {
   border: #524c49 0.1rem solid;
-}
-
-.btn-color-1:hover, 
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1, 
-.btn-color-2:hover {
-  background: #524c49;
-  color: white
-}
-
-.btn-color-1:hover {
-  background: black;
-}
-
-.btn-color-2 {
   background: none;
 }
 
-.btn-color-2:hover {
+.btn-color-1:hover {
+  cursor: pointer;
+  background: #524c49;
+  color: white;
   border: #ebe7e6 0.1rem solid;
 }
 
@@ -290,7 +281,8 @@ section {
   flex-direction: column;
 }
 
-.about-containers, .about-details-container {
+.about-containers,
+.about-details-container {
   display: flex;
 }
 
